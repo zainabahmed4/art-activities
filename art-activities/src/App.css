@@ -1,0 +1,120 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
+    box-sizing: border-box;
+}
+
+.header {
+    margin-top: 100px;
+    text-align: center;
+    line-height: 40px;
+}
+.card-container {
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    margin-top: 70px;
+    gap: 30px;
+    width: min(1360px, calc(100% - 48px));
+}
+
+.Card {
+    background-color: #fff;
+    padding-bottom: 20px;
+    box-shadow: 0 15px 25px #9d999933;
+    font-size: medium;
+    border-radius: 14px;
+    backdrop-filter: blur(2px);
+    text-align: center;
+    margin-bottom: 30px;
+    height: 460px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+} 
+
+.Card img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    display: block;
+}
+
+.Card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "IM Fell DW Pica", serif;
+    color: #432818;
+
+}
+
+.Card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    line-height: 19px;
+}
+
+.Card button {
+    background-color: #132a13;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 8px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Card a {
+  margin-top: 0;
+}
+
+.Card button:hover {
+  transform: scale(1.09);
+}
+
+@media (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 850px) {
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        width: min(380px, calc(100% - 32px));
+    }
+}
