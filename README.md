@@ -42,7 +42,7 @@ Here's a walkthrough of implemented required features:
 
 <img src='art-activities/art-activities-gif-mobile.gif' title='Mobile Video Walkthrough' width='300' alt='Mobile Video Walkthrough' />
 
-GIF created with ...  
+GIF created with [Kap](https://getkap.co/)  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
